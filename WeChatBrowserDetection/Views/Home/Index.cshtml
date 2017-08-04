@@ -3,15 +3,13 @@
 }
 <h2>@ViewData["Title"].</h2>
 
-<p>And this would be the home page.</p>
-
-@if (ViewBag.Message.Contains("QQBrowser"))
+@if (ViewBag.Browser.Contains("QQBrowser"))
 {
-    <p>Welcome WeChat friends.</p>
+    <p>Welcome WeChat browser.</p>
 }
 else
 {
-    <p>Welcome others.</p>
+    <p>Welcome inferior browsers.</p>
 }
 
-<p>Your browser is: @ViewBag.Message</p>
+<p>Your browser is: @ViewBag.Browser</p>
