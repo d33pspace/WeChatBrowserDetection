@@ -10,6 +10,10 @@ namespace WeChatBrowserDetection.Controllers
     {
         public IActionResult Index()
         {
+            var agent = Request.Headers["User-Agent"];
+            Console.WriteLine(agent.ToString());
+            ViewBag.Message = agent.ToString();
+
             return View();
         }
 

@@ -3,4 +3,15 @@
 }
 <h2>@ViewData["Title"].</h2>
 
-<p>Use this area to provide additional information.</p>
+<p>And this would be the home page.</p>
+
+@if (ViewBag.Message.Contains("QQBrowser"))
+{
+    <p>Welcome WeChat friends.</p>
+}
+else
+{
+    <p>Welcome others.</p>
+}
+
+<p>Your browser is: @ViewBag.Message</p>
