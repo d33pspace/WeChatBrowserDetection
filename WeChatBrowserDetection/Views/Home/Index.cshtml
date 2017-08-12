@@ -12,13 +12,13 @@ else
     <p>Welcome inferior browsers.</p>
 }
 
-@if (ViewBag.Browser.Contains("iPhone") || (ViewBag.Browser.Contains("iPad"))
+@if (ViewBag.Browser.Contains("Mac OS X"))
 {
-    <p>Welcome iOS lover.</p>
+    <p>Welcome Apple lover.</p>
 }
 else
 {
-    <p>Welcome Andoid, etc.</p>
+    <p>Welcome Andoid, Windows, etc.</p>
 }
 
 <p>Your browser is: @ViewBag.Browser</p>
